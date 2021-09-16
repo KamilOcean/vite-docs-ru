@@ -6,6 +6,6 @@
     "serve-docs": "vitepress serve"
   },
   "devDependencies": {
-    "vitepress": "^0.12.2"
+    "vitepress": "^0.18.1"
   }
 }
