@@ -17,7 +17,7 @@
   - `rollupInputOptions` и `rollupOutputOptions` заменены на [`build.rollupOptions`](/config/#build-rollupoptions).
   - `esbuildTarget` сейчас - [`build.target`](/config/#build-target).
   - `emitManifest` сейчас - [`build.manifest`](/config/#build-manifest).
-  - Следующие build options удалены, потому что они могут быть настроены через plugin hooks или другие опции:
+  - Следующие build опции удалены, потому что они могут быть настроены через плагин хуков (plugin hooks) или другие опции:
     - `entry`
     - `rollupDedupe`
     - `emitAssets`
@@ -130,4 +130,4 @@ Vite 2 использует совершенно перепроектирова�
 - Serving virtual files -> используйте [`resolveId`](https://rollupjs.org/guide/en/#resolveid) + [`load`](https://rollupjs.org/guide/en/#load) hooks
 - Добавить `alias`, `define` или другие config опции -> используйте [`config`](./api-plugin#config) hook
 
-Так как большинство логики можно реализовать через plugin hooks вместо middlewares, то нужда в middlewares значительно уменьшена. Internal server app сейчас старый добрый - [connect](https://github.com/senchalabs/connect) вместо Koa.
+Так как большинство логики можно реализовать через плагин хуков (plugin hooks) вместо middlewares, то нужда в middlewares значительно уменьшена. Internal server app сейчас старый добрый - [connect](https://github.com/senchalabs/connect) вместо Koa.
